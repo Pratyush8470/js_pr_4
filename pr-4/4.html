@@ -7,7 +7,9 @@
 </head>
 <body>
     
-
+    <h1 id="a"></h1>
+    <h1 id="b"></h1>
+    <h1 id="c"></h1>
 
     <script>
 
@@ -17,8 +19,10 @@
         }
         const length = 15;
         const height = 5;
-        const rectangleArea = areaOfrectangle(length , height);
-        console.log(`Area of rectangle is : ${rectangleArea}`);
+        const rectangle= areaOfrectangle(length , height);
+        document.getElementById("a").innerHTML+=(`length is : ${length}`);
+        document.getElementById("b").innerHTML+=(`height is : ${height}`);
+        document.getElementById("c").innerHTML+=(`Area of rectangle is : ${rectangle}`);
         
     </script>
 </body>

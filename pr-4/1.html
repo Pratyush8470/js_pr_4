@@ -7,6 +7,7 @@
 </head>
 <body>
     
+    <h1 id="a"></h1>
 
     <script>
 
@@ -14,11 +15,11 @@
         const greeting=(name) =>{
             if(name === undefined)
             {
-                console.log("Good Morning");
+                document.getElementById("a").innerHTML+=(`Good Morning</br> </br>`);
             }
             else
             {
-                console.log("Hello " + name + ", How are you");
+                document.getElementById("a").innerHTML+=("Hello " + name + ", How are you");
             }
         }
         greeting();

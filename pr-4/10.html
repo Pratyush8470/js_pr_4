@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10</title>
+</head>
+
+<body>
+
+    <h1 id="a"></h1>
+
+    <script>
+
+        const num = (a, b) => {
+            document.getElementById("a").innerHTML += (`</br>before swapping numbers : </br>a is ${a},</br>b is ${b}</br></br>`);
+            a = a + b;
+            b = a - b;
+            a = a - b;
+            document.getElementById("a").innerHTML += (`after swapping numbers : </br>a is ${a},</br>b is ${b}</br><hr>`);
+        }
+        num(5, 8);
+        num(8, 13);
+
+    </script>
+</body>
+
+</html>

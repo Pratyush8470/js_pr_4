@@ -7,17 +7,22 @@
 </head>
 <body>
     
-
+    <h1 id="a"></h1>
+    <h1 id="b"></h1>
+    <h1 id="c"></h1>
 
     <script>
 
         const areaOfcircle=(radius) =>{
-            const pi= Math.PI;
+            
             return pi * radius * radius;
         }
+        const pi= 3.14;
         const radius=5;
         const area=areaOfcircle(radius);
-        console.log(`Area of circle is : ${area}`);
+        document.getElementById("a").innerHTML+=(`value of pi is : ${pi}</br> </br>`);
+        document.getElementById("b").innerHTML+=(`value of radius is : ${radius}</br> </br>`);
+        document.getElementById("c").innerHTML+=(`Area of circle is : ${area}`);
     </script>
 </body>
 </html>
